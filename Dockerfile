@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17
+FROM eclipse-temurin:11
 
 ENV DATA_ROOT /data
 ENV USER_HOME "${DATA_ROOT}/home"
