@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build docker image",
+            "type": "shell",
+            "command": "docker build --pull --rm --build-arg BASE_IMAGE_VERSION=11 -f Dockerfile -t docker-java-sshd:11 . && docker build --pull --rm --build-arg BASE_IMAGE_VERSION=17 -f Dockerfile -t docker-java-sshd:17 ."
+        }
+    ]
+}
